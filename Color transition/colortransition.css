@@ -1,0 +1,52 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-transition {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: backgroundTransition 5s linear infinite;
+}
+
+span {
+    font-size: 2rem;
+    animation: textAnimation 5s linear infinite;
+}
+
+@keyframes textAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes backgroundTransition {
+  0% {
+    background-color: #3498db;
+  }
+  50% {
+    background-color: #f39c12;
+  }
+  100% {
+    background-color: #27ae60;
+  }
+}
+
+.content {
+  z-index: 1;
+}
