@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#gif-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url(/Food-loading/img/pizza-background-6276659_1280.jpg);
+    background-color: rgba(206, 206, 206, 0.637);
+    background-blend-mode: overlay;
+}
+
+img {
+    width: 15rem;
+    height: auto;
+}
+
+span {
+    font-size: 24px;
+    font-family: Segoe UI;
+    font-weight: 700;
+    color: orangered;
+}
